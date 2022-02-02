@@ -10,8 +10,8 @@ services:
     image: nginx:stable-alpine
     container_name: nginx_proxy
     ports:
-      - "${NGINX_PORT}:80"
-      - "81:81"
+      - "${NGINX_PORT_SERVER}:80"
+      - "${NGINX_PORT_CLIENT}:81"
     volumes:
       - ./nginx/conf.d:/etc/nginx/conf.d
     depends_on:
