@@ -79,7 +79,7 @@ services:
         uid: 1000
     working_dir: /var/www/html
     volumes:
-      - ./server_machine/backend:/var/www/html
+      - ./server_machine/backend:/var/www
       - ./server_machine/php-ini/7.4/php.ini:/usr/local/etc/php/php.ini
     ports:
       - "${PHP_BACKEND_SERVER_PORT}:8000"
@@ -99,7 +99,7 @@ services:
         uid: 1000
     working_dir: /var/www/html
     volumes:
-      - ./client_machine/backend:/var/www/html
+      - ./client_machine/backend:/var/www
       - ./client_machine/php-ini/7.4/php.ini:/usr/local/etc/php/php.ini
     ports:
       - "${PHP_BACKEND_CLIENT_PORT}:8000"
