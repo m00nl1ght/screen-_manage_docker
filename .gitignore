@@ -1,0 +1,15 @@
+.env
+
+/client_machine/mysql
+/client_machine/php-ini
+/server_machine/mysql
+/server_machine/php-ini
+
+
+/client_machine/backend/*
+!/client_machine/backend/Dockerfile
+!/client_machine/backend/.env.example
+
+/server_machine/backend/*
+!/server_machine/backend/Dockerfile
+!/server_machine/backend/.env.example
