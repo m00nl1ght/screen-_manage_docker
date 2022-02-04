@@ -11,5 +11,7 @@
 !/client_machine/backend/.env.example
 
 /server_machine/backend/*
+/server_machine/frontend/*
 !/server_machine/backend/Dockerfile
+!/server_machine/frontend/Dockerfile
 !/server_machine/backend/.env.example
