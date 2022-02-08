@@ -7,7 +7,9 @@
 
 
 /client_machine/backend/*
+/client_machine/frontend/*
 !/client_machine/backend/Dockerfile
+!/client_machine/frontend/Dockerfile
 !/client_machine/backend/.env.example
 
 /server_machine/backend/*
